@@ -1,0 +1,13 @@
+{% extends "admin/index.html" %}
+
+{% block content %}
+<h1>Welcome to the Polls Admin!</h1>
+
+<div class="app-list">
+    <h2>Applications</h2>
+    <ul>
+        <li><a href="{% url 'admin:polls_question_changelist' %}">Questions</a></li>
+        <li><a href="{% url 'admin:polls_choice_changelist' %}">Choices</a></li>
+    </ul>
+</div>
+{% endblock %}
